@@ -1,6 +1,14 @@
-import { colors } from '@ignite-ui/tokens'
 import { ReactElement } from 'react'
 
+import { styled } from './styles'
+
+const Button = styled('button', {
+  fontFamily: '$default',
+  backgroundColor: '$ignite500',
+  borderRadius: '$md',
+  padding: '$4',
+})
+
 export const App = (): ReactElement => {
-  return <h1 style={{ color: colors.ignite900 }}>Hello world</h1>
+  return <Button>Hello World</Button>
 }
