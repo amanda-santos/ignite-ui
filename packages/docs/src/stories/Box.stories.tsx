@@ -1,4 +1,4 @@
-import { Box, BoxProps } from "@ignite-ui/react";
+import { Box, BoxProps, Text } from "@ignite-ui/react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 export default {
@@ -7,10 +7,31 @@ export default {
   args: {
     children: (
       <>
-        <span>Lorem ipsum</span>
+        <Text>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          ea at iusto nisi! Assumenda cum impedit, aliquam voluptatum nesciunt
+          accusamus esse nulla aspernatur laudantium culpa, nostrum voluptatibus
+          magni eos sapiente!
+        </Text>
       </>
     ),
   },
 } as Meta<BoxProps>;
 
 export const Primary: StoryObj<BoxProps> = {};
+
+export const CustomTag: StoryObj<BoxProps> = {
+  args: {
+    children: (
+      <>
+        <Text>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          ea at iusto nisi! Assumenda cum impedit, aliquam voluptatum nesciunt
+          accusamus esse nulla aspernatur laudantium culpa, nostrum voluptatibus
+          magni eos sapiente!
+        </Text>
+      </>
+    ),
+    as: "section",
+  },
+};
