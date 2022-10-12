@@ -17,12 +17,31 @@ jobs:
         with:
           node-version: 16
 
-      - run: npm ci
+      - name: Install dependencies
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
 
-      - run: npm run build
+      - name: Build
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn build
+          else
+          npm run build
+          fi
 
       - name: Deploy storybook
         working-directory: ./packages/docs
-        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn deploy-storybook -- --ci --existing-output-dir=storybook-static
+          else
+          npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+          fi
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
