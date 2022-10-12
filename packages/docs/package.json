@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "start-storybook -p 6006",
+    "deploy-storybook": "storybook-to-ghpages",
     "build": "build-storybook"
   },
   "keywords": [],
@@ -30,6 +31,7 @@
     "@ignite-ui/tokens": "*",
     "@ignite-ui/ts-config": "*",
     "@storybook/addon-a11y": "^6.5.12",
+    "@storybook/storybook-deployer": "^2.8.12",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
