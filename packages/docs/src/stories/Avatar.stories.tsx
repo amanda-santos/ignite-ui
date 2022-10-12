@@ -8,6 +8,13 @@ export default {
     src: "https://github.com/amanda-santos.png",
     alt: "Amanda Santos",
   },
+  argTypes: {
+    src: {
+      control: {
+        type: "text",
+      },
+    },
+  },
 } as Meta<AvatarProps>;
 
 export const Primary: StoryObj<AvatarProps> = {};
