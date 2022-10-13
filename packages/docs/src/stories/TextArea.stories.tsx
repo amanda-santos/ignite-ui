@@ -3,11 +3,11 @@ import {
   Text,
   TextArea,
   TextAreaProps,
-} from "@amanda-santos-ignite-ui/react";
-import type { Meta, StoryObj } from "@storybook/react";
+} from '@amanda-santos-ignite-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: "Form/Text Area",
+  title: 'Form/Text Area',
   component: TextArea,
   args: {},
   decorators: [
@@ -15,24 +15,24 @@ export default {
       return (
         <Box
           as="label"
-          css={{ display: "flex", flexDirection: "column", gap: "$2" }}
+          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
         >
           <Text size="sm">Observations</Text>
           {Story()}
         </Box>
-      );
+      )
     },
   ],
-} as Meta<TextAreaProps>;
+} as Meta<TextAreaProps>
 
 export const Primary: StoryObj<TextAreaProps> = {
   args: {
-    placeholder: "Add any observations...",
+    placeholder: 'Add any observations...',
   },
-};
+}
 
 export const Disabled: StoryObj<TextAreaProps> = {
   args: {
     disabled: true,
   },
-};
+}

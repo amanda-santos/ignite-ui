@@ -1,9 +1,9 @@
-import { Label, MultiStepContainer, Step, Steps } from "./styles";
+import { Label, MultiStepContainer, Step, Steps } from './styles'
 
 export type MultiStepProps = {
-  size: number;
-  currentStep?: number;
-};
+  size: number
+  currentStep?: number
+}
 
 export function MultiStep({ size, currentStep = 1 }: MultiStepProps) {
   return (
@@ -12,13 +12,13 @@ export function MultiStep({ size, currentStep = 1 }: MultiStepProps) {
         Step {currentStep} of {size}
       </Label>
 
-      <Steps css={{ "--steps-size": size }}>
+      <Steps css={{ '--steps-size': size }}>
         {Array.from({ length: size }, (_, i) => i + 1).map((step) => {
-          return <Step key={step} active={currentStep >= step} />;
+          return <Step key={step} active={currentStep >= step} />
         })}
       </Steps>
     </MultiStepContainer>
-  );
+  )
 }
 
-MultiStep.displayName = "MultiStep";
+MultiStep.displayName = 'MultiStep'

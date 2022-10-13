@@ -3,11 +3,11 @@ import {
   Text,
   TextInput,
   TextInputProps,
-} from "@amanda-santos-ignite-ui/react";
-import type { Meta, StoryObj } from "@storybook/react";
+} from '@amanda-santos-ignite-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: "Form/Text Input",
+  title: 'Form/Text Input',
   component: TextInput,
   args: {},
   decorators: [
@@ -15,30 +15,30 @@ export default {
       return (
         <Box
           as="label"
-          css={{ display: "flex", flexDirection: "column", gap: "$2" }}
+          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
         >
           <Text size="sm">Your input label</Text>
           {Story()}
         </Box>
-      );
+      )
     },
   ],
-} as Meta<TextInputProps>;
+} as Meta<TextInputProps>
 
 export const Primary: StoryObj<TextInputProps> = {
   args: {
-    placeholder: "Type your name",
+    placeholder: 'Type your name',
   },
-};
+}
 
 export const Disabled: StoryObj<TextInputProps> = {
   args: {
     disabled: true,
   },
-};
+}
 
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
-    prefix: "cal.com/",
+    prefix: 'cal.com/',
   },
-};
+}

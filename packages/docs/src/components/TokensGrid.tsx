@@ -1,4 +1,4 @@
-import { remToPixels } from "../utils/remToPixels"
+import { remToPixels } from '../utils/remToPixels'
 
 import '../styles/tokens-grid.css'
 
@@ -7,7 +7,10 @@ type TokensGridProps = {
   hasRemValue?: boolean
 }
 
-export const TokensGrid = ({ tokens, hasRemValue = false }: TokensGridProps) => {
+export const TokensGrid = ({
+  tokens,
+  hasRemValue = false,
+}: TokensGridProps) => {
   return (
     <table className="tokens-grid">
       <thead>

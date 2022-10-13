@@ -3,11 +3,11 @@ import {
   Checkbox,
   CheckboxProps,
   Text,
-} from "@amanda-santos-ignite-ui/react";
-import type { Meta, StoryObj } from "@storybook/react";
+} from '@amanda-santos-ignite-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: "Form/Checkbox",
+  title: 'Form/Checkbox',
   component: Checkbox,
   args: {},
   decorators: [
@@ -15,14 +15,14 @@ export default {
       return (
         <Box
           as="label"
-          css={{ display: "flex", alignItems: "center", gap: "$2" }}
+          css={{ display: 'flex', alignItems: 'center', gap: '$2' }}
         >
           {Story()}
           <Text size="sm">Accept terms of use</Text>
         </Box>
-      );
+      )
     },
   ],
-} as Meta<CheckboxProps>;
+} as Meta<CheckboxProps>
 
-export const Primary: StoryObj<CheckboxProps> = {};
+export const Primary: StoryObj<CheckboxProps> = {}

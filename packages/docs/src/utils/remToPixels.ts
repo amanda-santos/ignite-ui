@@ -1,2 +1,2 @@
 export const remToPixels = (value: string) =>
-  Number(value.replace("rem", "")) * 16;
+  Number(value.replace('rem', '')) * 16
