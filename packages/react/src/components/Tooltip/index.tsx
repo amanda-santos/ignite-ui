@@ -1,4 +1,4 @@
-import { ComponentProps, ReactNode } from 'react'
+import { ComponentProps, ReactElement, ReactNode } from 'react'
 import * as TooltipComponent from '@radix-ui/react-tooltip'
 
 import { TooltipArrow, TooltipContent } from './styles'
@@ -9,7 +9,11 @@ export type TooltipProps = ComponentProps<typeof TooltipContent> & {
   triggerElement: ReactNode
 }
 
-export const Tooltip = ({ triggerElement, text, ...props }: TooltipProps) => {
+export const Tooltip = ({
+  triggerElement,
+  text,
+  ...props
+}: TooltipProps): ReactElement => {
   return (
     <TooltipComponent.Provider>
       <TooltipComponent.Root>

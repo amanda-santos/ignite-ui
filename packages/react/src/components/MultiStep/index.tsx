@@ -1,3 +1,4 @@
+import { ReactElement } from 'react'
 import { Label, MultiStepContainer, Step, Steps } from './styles'
 
 export type MultiStepProps = {
@@ -5,7 +6,10 @@ export type MultiStepProps = {
   currentStep?: number
 }
 
-export function MultiStep({ size, currentStep = 1 }: MultiStepProps) {
+export function MultiStep({
+  size,
+  currentStep = 1,
+}: MultiStepProps): ReactElement {
   return (
     <MultiStepContainer>
       <Label>

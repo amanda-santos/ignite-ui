@@ -1,11 +1,11 @@
 import { Check } from 'phosphor-react'
-import { ComponentProps } from 'react'
+import { ComponentProps, ReactElement } from 'react'
 
 import { CheckboxContainer, CheckboxIndicator } from './styles'
 
 export type CheckboxProps = ComponentProps<typeof CheckboxContainer>
 
-export function Checkbox(props: CheckboxProps) {
+export function Checkbox(props: CheckboxProps): ReactElement {
   return (
     <CheckboxContainer {...props}>
       <CheckboxIndicator asChild>
