@@ -53,6 +53,8 @@ Technologies used to develop this project:
 
 Click <a href="https://amanda-santos.github.io/ignite-ui/?path=/story/home--page">here</a> to see it live 📺
 
+https://user-images.githubusercontent.com/49074930/195923161-d8bae15d-f095-43e8-9e67-01724941c0e1.mp4
+
 ## ⌨ Getting started
 
 - Run `npm i` or `yarn` to install the dependencies
