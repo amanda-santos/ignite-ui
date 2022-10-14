@@ -30,6 +30,30 @@
 <p>This is Ignite's Design System, developed for study purposes during Ignite React by Rocketseat.</p>
 </p>
 
+## 🧱 Tokens and components
+
+These are the tokens available in this project:
+- [x] Colors
+- [x] Font sizes
+- [x] Font weights
+- [x] Font families
+- [x] Line heights
+- [x] Radii
+- [x] Spaces
+
+These are the components available in this project:
+- [x] Avatar
+- [x] Box
+- [x] Button
+- [x] Checkbox
+- [x] Heading
+- [x] MultiStep
+- [x] Text
+- [x] TextArea
+- [x] TextInput
+- [x] Toast
+- [x] Tooltip
+
 ## 🎨 Layout
 
 <p>
